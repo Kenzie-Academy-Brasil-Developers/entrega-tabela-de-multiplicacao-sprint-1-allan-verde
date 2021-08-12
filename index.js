@@ -1,9 +1,11 @@
-// Se preferir, utilize o script em um arquivo .js separado.
-function nomeDaSuaFuncao() { // Substitua "nomeDaSuaFuncao" por um nome mais apropriado
+function tabela(n) {
     // TODO: escrever dois loops aninhados para desenhar o array bidimensional e monstar o restante da tabela no console.
-    let x = [];
-    for (let i = 0; i <= 10; i++) {
-        x[i] = [];
+    let meuArray = []
+    for (let linha = 0; linha < n; linha++) {
+        meuArray[linha] = []
+        for (let coluna = 0; coluna < n; coluna++) {
+            meuArray[linha][coluna] = 'x'
+        }
     }
-    console.table(x)
+    return meuArray
 }
